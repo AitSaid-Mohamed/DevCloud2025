@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"
+    networks:
+      - react-network
+
+networks:
+  react-network:
+    driver: bridge
